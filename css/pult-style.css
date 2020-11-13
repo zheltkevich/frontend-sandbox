@@ -38,6 +38,12 @@ a {
   text-decoration: none;
 }
 
+head,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -58,7 +64,6 @@ a {
 }
 
 .main-page {
-  margin-top: 20px;
   margin-bottom: 100px;
 }
 
@@ -67,11 +72,12 @@ a {
   color: black;
   line-height: 1.1;
   text-align: center;
+  padding-top: 30px;
 }
 
 @media (min-width: 1024px) {
   .main-page__heading {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -92,7 +98,7 @@ a {
 @media (min-width: 1024px) {
   .main-page__content-wrapper {
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -112,19 +118,19 @@ a {
 
 @media (min-width: 768px) {
   .main-page__image-container {
-    margin-right: 30px;
+    margin-right: 10px;
   }
 }
 
 .main-page__image {
   display: block;
   max-width: 300px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
 }
 
 .main-page__text {
+  max-width: 640px;
   font-size: 16px;
+  line-height: 21px;
   color: #535353;
 }
 
@@ -140,13 +146,14 @@ a {
 .main-page__button {
   display: block;
   width: 100%;
+  max-width: 300px;
   height: 50px;
-  background-color: transparent;
+  background-color: #535353;
   margin: 0 auto;
   text-align: center;
-  padding: 10px 0;
-  color: black;
-  border: 2px solid black;
+  padding: 12px 0;
+  color: white;
+  border: 2px solid #535353;
   -webkit-border-radius: 10px;
           border-radius: 10px;
 }
@@ -158,46 +165,7 @@ a {
 }
 
 .main-page__button:hover {
-  background-color: black;
-  color: white;
-}
-
-.row1__cell {
-  font-size: 24px;
+  background-color: #ffffff;
   color: black;
-  font-weight: bold;
-  line-height: 1.1;
-  text-align: center;
-  padding: 20px 10px;
-}
-
-.row2__cell {
-  padding: 20px 10px;
-}
-
-.row2__image {
-  display: inline-block;
-  width: 300px;
-}
-
-.row2__text {
-  display: inline-block;
-  font-size: 16px;
-  color: #535353;
-  padding: 20px 0;
-}
-
-.row3__cell {
-  padding: 20px 10px;
-}
-
-.table-button__row {
-  border: none;
-}
-
-.table-button__cell {
-  width: 300px;
   border: 2px solid black;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
 }
